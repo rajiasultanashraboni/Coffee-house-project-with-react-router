@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+    <footer className="footer footer-horizontal absolute bottom-0 footer-center bg-base-200 text-base-content rounded p-10">
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a>
@@ -42,8 +42,7 @@ const Footer = () => {
       </nav>
       <aside>
         <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by ACME
-          Industries Ltd
+          Copyright © {new Date().getFullYear()} - All right reserved by Rajia sultana shraboni
         </p>
       </aside>
     </footer>
