@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Card = ({ coffee, coffeess }) => {
+const Card = ({ coffee }) => {
   const { popularity,type,origin, rating, category, image, name } = coffee;
   return (
-    <div className="gap-6">
+    <Link to={`/coffee/${coffee.id}`}>
+        <div className="gap-6">
         <div className="card bg-base-100 shadow-sm ">
       <figure className="h-[250px]">
         <img className="w-full h-full object-cover"
@@ -31,6 +33,7 @@ const Card = ({ coffee, coffeess }) => {
       </div>
     </div>
     </div>
+    </Link>
   );
 };
 
