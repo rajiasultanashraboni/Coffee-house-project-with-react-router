@@ -1,9 +1,10 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 w-[80%] mx-auto">
+    <div className="fixed  w-full z-100 bg-white/70 backdrop-blur-md ">
+      <div className="navbar w-[80%] mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -83,6 +84,10 @@ const Navbar = () => {
         </ul>
       </div>
     </div>
+
+    </div>
+    
+    
   );
 };
 
