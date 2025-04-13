@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 const MainLayouts = () => {
     return (
-        <div className='min-h-screen flex flex-col'>
+        <div className='min-h-screen'>
             {/* navbar  */}
             <Navbar></Navbar>
             {/* dynamich section  */}
