@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Card = ({coffee}) => {
+const Card = ({coffee,coffeess}) => {
     const {nutrition_info,ingredients,category,image,name}= coffee
     return (
         <div>
-            
+            {name}
         </div>
     );
 };
