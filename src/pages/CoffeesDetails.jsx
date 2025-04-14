@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import coffeeImage from "../assets/nutrition.png"
+import { addFavorite, getAllfavorites } from "../jsFile";
 
 const CoffeesDetails = () => {
+
+  const handleFavorite =(coffee)=>{
+    addFavorite(coffee)
+    // getAllfavorites(coffee)
+  }
+
   const { id } = useParams();
   const data = useLoaderData();
   const [coffee, setCoffee] = useState({});
@@ -26,7 +33,7 @@ const CoffeesDetails = () => {
           <p>rating:{coffee.rating}</p>
         </div>
         <div>
-          <button className="btn btn-warning">Add Favorite</button>
+          <button onClick={()=>{handleFavorite(coffee)}} className="btn btn-warning">Add Favorite</button>
         </div>
       </div>
       <div className="space-y-2">

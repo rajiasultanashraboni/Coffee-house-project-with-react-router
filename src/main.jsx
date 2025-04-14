@@ -5,6 +5,8 @@ import {
 } from "react-router-dom";
 import './index.css'
 import routes from './route/Route';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 
 
@@ -13,5 +15,6 @@ import routes from './route/Route';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={routes} />
+    <ToastContainer />
   </StrictMode>,
 )
