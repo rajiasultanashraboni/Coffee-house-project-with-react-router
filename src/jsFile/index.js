@@ -46,7 +46,24 @@ const addFavorite = coffee=>{
   });
 }
 
+// remove a coffee from localstorage 
+
+const removeFavorite = (id)=>{
+    const favorites = getAllfavorites()
+    const remaining = favorites.filter(coffee=>coffee.id !=id)
+    localStorage.setItem('favorites',JSON.stringify(remaining))
+   toast.success(' Successfully added!', {
+    position: "top-center",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+  });
+
+}
 
 
-
-export {addFavorite,getAllfavorites}
+export {addFavorite,getAllfavorites,removeFavorite}
