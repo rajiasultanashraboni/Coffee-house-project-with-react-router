@@ -52,7 +52,7 @@ const removeFavorite = (id)=>{
     const favorites = getAllfavorites()
     const remaining = favorites.filter(coffee=>coffee.id !=id)
     localStorage.setItem('favorites',JSON.stringify(remaining))
-   toast.success(' Successfully added!', {
+   toast.success(' Successfully removed!', {
     position: "top-center",
     autoClose: 3000,
     hideProgressBar: false,
