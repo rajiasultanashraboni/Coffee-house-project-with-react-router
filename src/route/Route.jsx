@@ -43,7 +43,11 @@ const routes = createBrowserRouter([
             loader:()=>fetch('../coffees.json')
         }
     ]
+    
   },
+  {
+    basename: "/Coffee-house-project-with-react-router",
+  }
 ]);
 
 export default routes;
